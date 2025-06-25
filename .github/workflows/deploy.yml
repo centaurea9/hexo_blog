@@ -18,6 +18,9 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4.4.0
         with:
+          submodules: recursive  # 递归初始化所有子模块
+          fetch-depth: 0  # 拉取完整历史记录，避免子模块更新问题
+
           node-version: ${{ matrix.node-version }}
 
       - name: Configuration environment
