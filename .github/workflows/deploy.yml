@@ -35,12 +35,12 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name "centaurea9"
           git config --global user.email "centaurea1016@gmail.com"
-      - name: Install dependencies
+      - name: Install dependeninstalles
         run: |
           npm i -g hexo-cli
-          npm ci
+          npm install
           cd themes/arknights/
-          npm ci
+          npm install
           npm run build
           
       - name: Deploy hexo
