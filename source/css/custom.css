@@ -1,0 +1,49 @@
+
+#logo img {
+  /* 
+   * transition 属性是关键！
+   * 它告诉浏览器，当 transform 属性发生变化时，
+   * 这个变化过程要在 0.6 秒内平滑地完成，
+   * ease-in-out 是一种缓动效果，让动画看起来更自然。
+   */
+  transition: transform 0.6s ease-in-out;
+}
+
+/* 当鼠标悬停在 logo 容器上时 */
+#logo:hover img {
+  /* 
+   * 让图片以自身为中心，旋转 360 度（一整圈）。
+   */
+  transform: rotate(360deg);
+}
+/* -- 强制修改 footer 和社交链接的样式 (V2) -- */
+
+/* 
+ * 我们通过 `body` 标签来增加选择器的权重，
+ * 这比单独的 `aside footer` 优先级要高。
+ */
+body aside footer {
+  color: #36dc9c !important;
+  /*padding: 50px 50px 50px 3px !important;*/
+   padding: 0 !important;
+  border-top: 1px solid #211758 !important;
+}
+
+/* 
+ * 同样，为 social-links 也使用更具体的选择器
+ */
+body aside footer #social-links {
+  /* 
+   * margin: 上 右 下 左
+   * 顶部留 20px 间距，让它离上面的线有一点距离。
+   * 左右 auto 可以让它居中（如果它的父容器是 flex 布局）。
+   * 底部留 20px 间距，让它和下面的版权文字分开。
+   */
+ text-align: left !important;
+  margin: 0px 147px 0px 0px !important;
+}
+
+body aside footer nobr { /* 假设版权文字是用 nobr 标签包裹的 */
+  display: block; /* 让 nobr 表现得像一个块级元素，可以设置边距 */
+  padding: 2px 15px !important; /* 给每一行版权信息一点左右的内边距 */
+}
