@@ -14,9 +14,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4.2.2
-        with:
-          submodules: recursive  # 初始化子模块
-          fetch-depth: 0  # 拉取完整历史记录，避免子模块更新问题
+       # with:
+          #submodules: recursive  # 初始化子模块
+         # fetch-depth: 0  # 拉取完整历史记录，避免子模块更新问题
           
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4.4.0
