@@ -47,3 +47,8 @@ body aside footer nobr { /* 假设版权文字是用 nobr 标签包裹的 */
   display: block; /* 让 nobr 表现得像一个块级元素，可以设置边距 */
   padding: 2px 15px !important; /* 给每一行版权信息一点左右的内边距 */
 }
+@media (min-width: 1440px) {
+    article {
+        width: calc(100% - 650px);
+    }
+}
