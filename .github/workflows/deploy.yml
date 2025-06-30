@@ -39,7 +39,7 @@ jobs:
         run: |
           npm i -g hexo-cli
           npm install
-          cd themes/arknights/
+         
           npm install
           npm run build
           
