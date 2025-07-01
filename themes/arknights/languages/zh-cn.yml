@@ -52,9 +52,9 @@ menu:
   total: 总数
 
 search:
-  activeHolder: 键入以继续
-  blurHolder: 数据检索
-  noResult: 无 $0 相关数据
+  activeHolder: Type Here
+  blurHolder: Search
+  noResult: 空空如也
 
 footer:
   publish: 构建自

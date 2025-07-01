@@ -87,16 +87,21 @@ if theme.stylesheets && theme.stylesheets.length > 0
         style(defer src=url)
     link(rel='stylesheet', href=url)
 script
-  |if (window.localStorage.getItem('theme-mode') === 'light'
-  if theme.color === 'auto'
-    |  || window.matchMedia('(prefers-color-scheme:light)').matches
-  |)
-  |  document.documentElement.setAttribute('theme-mode', 'light')
-  |if (window.localStorage.getItem('theme-mode') === 'dark'
-  if theme.color === 'auto'
-    |  || window.matchMedia('(prefers-color-scheme:dark)').matches
-  |)
-  |  document.documentElement.setAttribute('theme-mode', 'dark')
+  if theme.color === 'dark-only'
+    |document.documentElement.setAttribute('theme-mode', 'dark')
+  else if theme.color === 'light-only'
+    |document.documentElement.setAttribute('theme-mode', 'light')
+  else
+    |if (window.localStorage.getItem('theme-mode') === 'light'
+    if theme.color === 'auto'
+      |  || window.matchMedia('(prefers-color-scheme:light)').matches
+    |)
+    |  document.documentElement.setAttribute('theme-mode', 'light')
+    |if (window.localStorage.getItem('theme-mode') === 'dark'
+    if theme.color === 'auto'
+      |  || window.matchMedia('(prefers-color-scheme:dark)').matches
+    |)
+    |  document.documentElement.setAttribute('theme-mode', 'dark')
 style
   |@font-face {
   |  font-family: BenderLight;

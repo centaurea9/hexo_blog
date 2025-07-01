@@ -57,13 +57,54 @@ body aside footer nobr { /* 假设版权文字是用 nobr 标签包裹的 */
 /* 屏幕宽度大于等于 1024px 时应用 (会覆盖上面的规则) */
 @media (min-width: 1024px) {
     article {
-        width: calc(100% - 412px);
+        width: calc(100% - 500px);
     }
 }
 
 /* 屏幕宽度大于等于 1440px 时应用 (会覆盖上面所有的规则) */
 @media (min-width: 1440px) {
     article {
-        width: calc(100% - 700px);
+        width: calc(100% - 600px);
     }
   }
+
+  /* 移除首页文章列表的卡片框线样式 - 已注释，新样式在文件底部 */
+/*
+.recent-post {
+  border: none !important;      /* 移除所有边框 
+  box-shadow: none !important; /* 移除所有阴影（很多“框”的效果是阴影）
+  background: transparent !important;  将背景设置为透明，防止留下一个纯色块 
+ }
+ */
+ 
+
+:root[theme-mode=dark] {
+    --theme-highlight: #2fe6ff!important; /* 暗色模式下的橙色高光 */
+}
+.recent-post time {
+    color: #ffffff;
+}
+#total {
+    background: transparent !important;
+}
+/*
+文章上方颜色#2fe6ff
+时间颜色#ffffff
+*/
+
+/* 重新定义文章卡片的悬停效果 */
+.recent-post {
+  border: 1px solid transparent !important;      /* 设置透明边框，为悬停效果做准备 */
+  box-shadow: none !important; /* 移除默认阴影 */
+  background: rgba(255, 255, 255, 0.05) !important; /* 设置半透明背景 */
+  border-radius: 8px !important; /* 添加圆角 */
+  transition: all 0.3s ease !important; /* 添加过渡动画 */
+}
+
+/* 鼠标悬停时的效果 */
+.recent-post:hover {
+  border: 1px solid #2fe6ff !important; /* 悬停时显示青色边框 */
+  background: rgba(47, 230, 255, 0.1) !important; /* 悬停时背景变为青色半透明 */
+  box-shadow: 0 4px 15px rgba(47, 230, 255, 0.3) !important; /* 添加青色发光效果 */
+  transform: translateY(-2px) !important; /* 轻微上移效果 */
+}
