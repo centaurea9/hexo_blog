@@ -23,7 +23,7 @@
  * 这比单独的 `aside footer` 优先级要高。
  */
 body aside footer {
-  color: #36dc9c !important;
+  color: #000000 !important;
   /*padding: 50px 50px 50px 3px !important;*/
    padding: 0 !important;
   border-top: 1px solid #211758 !important;
@@ -79,7 +79,7 @@ body aside footer nobr { /* 假设版权文字是用 nobr 标签包裹的 */
  
 
 :root[theme-mode=dark] {
-    --theme-highlight: #2fe6ff!important; /* 暗色模式下的橙色高光 */
+    --theme-highlight: #2fe6ff!important; 
 }
 .recent-post time {
     color: #ffffff;

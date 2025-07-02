@@ -59,11 +59,10 @@ aside
             each href, name in content
               a(href=href).icp-content= name
         br
-    nobr #{__('footer.publish')} 
-      a(href= 'http://hexo.io') Hexo
+    // 自定义footer内容
+    nobr © 2025 ZHH - 个人博客
     wbr
-    nobr  #{__('footer.theme')} 
-      a(href= 'https://github.com/Yue-plus/hexo-theme-arknights') Arknights
+    nobr 感谢访问，欢迎交流！
     wbr
-    nobr  #{__('footer.by')} 
-      a(href= 'https://github.com/Yue-plus') Yue_plus
+    nobr
+      a(href= url_for('about/')) 更多请看关于页

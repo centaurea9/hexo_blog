@@ -39,8 +39,8 @@ btn:
 
 menu:
   archive:
-    name: 文章
-    plural: 文章
+    name: 归档
+    plural: 归档
   navigation: 导航
   tag:
     name: 标签
