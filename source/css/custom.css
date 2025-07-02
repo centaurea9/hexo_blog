@@ -80,6 +80,7 @@ body aside footer nobr { /* 假设版权文字是用 nobr 标签包裹的 */
 
 :root[theme-mode=dark] {
     --theme-highlight: #2fe6ff!important; 
+    --theme-border: rgb(88 120 147);
 }
 .recent-post time {
     color: #ffffff;
