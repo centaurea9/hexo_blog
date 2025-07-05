@@ -20,7 +20,7 @@ if theme.mermaid && theme.mermaid.enable === true && theme.mermaid.version
 
 if theme.waline && theme.waline.enable === true
   script(async type='module').
-    import { init } from '//unpkg.com/@waline/client@v2/dist/waline.mjs';
+    import { init } from '//unpkg.com/@waline/client@v3/dist/waline.js';
     window.waline = init;
 
 if theme.mathjax && theme.mathjax.enable === true

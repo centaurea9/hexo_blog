@@ -41,7 +41,7 @@ script(class="pjax-js").
   document.addEventListener('pjax:complete', function() { updatePageConfig(); });
   updatePageConfig();
 if theme.waline && theme.waline.enable === true
-  link(rel="stylesheet", href= url_for('//unpkg.com/@waline/client@v2/dist/waline.css'))
+  link(rel="stylesheet", href= url_for('//unpkg.com/@waline/client@v3/dist/waline.css'))
 link(type="text/css" rel="stylesheet" href=url_for("/lib/encrypt/hbe.style.css"))
 if theme.gitalk && theme.gitalk.enable === true
   script(src=url_for("js/gitalk.js"))
