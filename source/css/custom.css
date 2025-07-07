@@ -109,3 +109,18 @@ body aside footer nobr { /* 假设版权文字是用 nobr 标签包裹的 */
   box-shadow: 0 4px 15px rgba(47, 230, 255, 0.3) !important; /* 添加青色发光效果 */
   transform: translateY(-2px) !important; /* 轻微上移效果 */
 }
+
+/*
+ * 设置文章内容区域的所有图片样式
+ */
+#post-bg img {
+   max-height: 80vh; /* 最大高度为屏幕的75% */
+  width: auto;      /* 宽度自动调整以保持比例 */
+  display: block;   /* 确保可以设置 margin */
+  margin-left: auto;  /* 配合下一行实现居中 */
+  margin-right: auto; /* 配合上一行实现居中 */
+  
+ 
+  border-radius: 8px; /* 给所有图片加上圆角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 加一点阴影，更有质感 */
+}
