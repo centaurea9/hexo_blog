@@ -22,10 +22,11 @@ background_image:
 
 # 导航栏
 menu:
-  Home: ""
-  About: about/
-  # Contact: contact/
+  Home: "" 
   Archives: archives/
+  Connections: Connections/
+  About: about/
+ 
 
 # 侧边栏
 aside:
