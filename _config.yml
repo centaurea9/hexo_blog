@@ -104,5 +104,3 @@ deploy:
   type: git
   repository: git@github.com:centaurea9/centaurea9.github.io.git
   branch: main
-
-

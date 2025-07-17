@@ -115,7 +115,7 @@ block aside-block
   - 
     const encrypted = page.encrypt || page.password
     const tocContent = encrypted === undefined ? toc(page.content, theme.toc) : toc(page.origin, theme.toc)
-  if (tocContent.length > 0)
+  if (tocContent.length > 0 && page.toc !== false)
     #toc-div(style=encrypted !== undefined?"display:none":"")
       h1 #{__('post.index')}
       |!{tocContent}
