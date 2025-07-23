@@ -18,3 +18,6 @@ toc: false
 
 - #### [Yue_Plus](https://arknights.theme.hexo.yue.zone/)
     >blog主题作者
+
+- #### [クルクボール](https://www.pixiv.net/users/3617190)
+    >头像作者，作品名字为[Platinum](https://www.pixiv.net/artworks/83516462)
