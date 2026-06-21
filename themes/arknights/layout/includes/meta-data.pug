@@ -8,6 +8,10 @@ link(
   href=(url_for(theme.favicon.href ? theme.favicon.href : "favicon.ico"))
 )
 
+link(rel="preconnect" href="https://fonts.googleapis.com")
+link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous")
+link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap")
+
 link(rel="preload", as="font", crossorigin="anonymous", href=url_for("font/Bender.ttf"))
 link(rel="preload", as="font", crossorigin="anonymous", href=url_for("font/BenderLight.woff2"))
 link(rel="preload", as="font", crossorigin="anonymous", href=url_for('font/JetBrainsMono-Regular.woff2'))
