@@ -15,8 +15,8 @@ color: dark-only
 
 # <body> 背景图片链接
 background_image:
-  dark: https://photos.centaurea.top/PicGo/background1.jpg # 暗色模式
-  light: https://photos.centaurea.top/PicGo/background1.jpg # 亮色模式
+  dark: /img/background1.webp # 暗色模式
+  light: /img/background1.webp # 亮色模式
   
   
 
@@ -31,7 +31,7 @@ menu:
 # 侧边栏
 aside:
   in_left: false # 侧边栏在左 true / false
-  logo: https://photos.centaurea.top/PicGo/logo1.jpg #图片链接，建议 1:1 比例
+  logo: /img/logo1.webp #图片链接，建议 1:1 比例
   logo_margin: 0 # 为 Logo 图片设置 CSS margin 属性值，参考：https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin
   logo_border_radius: 50% # 为 Logo 图片设置 CSS border-radius 属性值，参考：https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-radius
   #dr: / # 侧边栏 Dr. 链接
@@ -51,7 +51,7 @@ aside:
 # FontAwesome 格式可用图标参考：https://fontawesome.com/icons
 social:
    GitHub: https://github.com/centaurea9 || fab fa-github
-   E-Mail: mailto:centuarea1016@gmail.com || fa fa-envelope
+   #E-Mail: mailto:centuarea1016@gmail.com || fa fa-envelope
    #BiliBili: https://space.bilibili.com/475036731 || fa-brands fa-bilibili
    travelling: https://www.travellings.cn/go.html || fa fa-train-subway
   # Weibo: https://weibo.com/yourname || fab fa-weibo
