@@ -221,21 +221,20 @@ class canvasDust {
             return;
         }
         const dustArr = this.dustArr;
+        const ctx = this.ctx;
+        ctx.clearRect(0, 0, this.width, this.height);
         for (let i of dustArr) {
-            this.ctx.clearRect(i.x - 6, i.y - 6, 12, 12);
             if (i.x < -5 || i.y < -5) {
-                const x = this.width;
-                const y = Math.floor(Math.random() * window.innerHeight);
-                i.x = x;
-                i.y = y;
+                i.x = this.width;
+                i.y = Math.floor(Math.random() * window.innerHeight);
             }
             else {
                 i.x -= i.vx;
                 i.y -= i.vy;
             }
-        }
-        for (let i of dustArr) {
-            this.buildDust(i);
+            ctx.beginPath();
+            ctx.ellipse(i.x, i.y, i.radiusX, i.radiusY, i.rotation, 0, Math.PI * 2);
+            ctx.fill();
         }
         requestAnimationFrame(this.paint);
     };
