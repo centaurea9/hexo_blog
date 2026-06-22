@@ -147,7 +147,7 @@ artalk:
 
 # 图表支持
 mermaid:
-  enable: true
+  enable: false
   version: "10.5.0"
 
 # pjax 支持
