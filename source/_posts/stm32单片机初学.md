@@ -1,6 +1,7 @@
 ---
 title: stm32单片机初学
 date: 2025-07-15 23:44:32
+updated: 2026-06-25
 category: stm32单片机
 tags: [技术,stm32]
 ---
